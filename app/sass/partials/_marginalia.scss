@@ -1,0 +1,72 @@
+// Formating for different types of marginalia content
+
+
+blockquote{
+  border-left: 5px solid $red;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+  margin-top: 1.5em;
+  padding-left: 1em;
+}
+
+aside.pull {
+  margin-left: -20%;
+  margin-top: .2em;
+  margin-bottom: .5em;
+}
+
+
+.opening {
+  color: $red;
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.margin-notes,
+.content-left {
+  width: 230px;
+  margin-left: -230px;
+  margin-right: 20px;
+  text-align: right;
+  font-size: .75em;
+}
+
+.margin-notes-right,
+.content-right {
+  width: 230px;
+  margin-left: 760px;
+  margin-right: -20px;
+  text-align: left;
+  font-size: .75em;
+  position: absolute;
+}
+
+.content-right {
+  width: 230px;
+  margin-left: 760px;
+  margin-right: -20px;
+  text-align: left;
+  font-size: .75em;
+  position: absolute;
+}
+
+.content-right ul,
+.content-left ul {
+  list-style: none;
+}
+
+/*
+  asides stuff
+*/
+aside.lowlight {
+  opacity: .3;
+}
+
+aside.lowlight:hover {
+  opacity: 1;
+}
+
+aside h3 {
+  text-align: center;
+  padding-left: 20px;
+}
