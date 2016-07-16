@@ -35,7 +35,7 @@ Where do we draw the line? where do we say it's safe to confront an armed man ve
 
 and another one from a WNBA team, particularly the follow up discussion. SO showing favor to one side of the debate, just the 2 black men who died and ignoring 5 police officers who died in the line of duty is a good way to start change?
 
-And we take refuge on video because it shows all the action and gives context to what happens, right? Because we should always believe slanted stories coming from both sides of the argument and never make up our own minds on the issues... right? Because a good editor can not change the perception of an event
+And we take refuge on video because it shows all the action and gives context to what happens, right? Because we should always believe slanted stories coming from both sides of the argument and never make up our own minds on the issues... right? Because a good editor can not change the perception of an event and sometimes the editing is as simple as not showing the entire event even when we have the whole video.
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">And that would have worked in an era without smartphones, streaming video, social media, etc., you complete wanker. <a href="https://t.co/MvOvDQyMZU">https://t.co/MvOvDQyMZU</a></p>&mdash; Deborah ✶ (@deborah_gu) <a href="https://twitter.com/deborah_gu/status/752340532748251137">July 11, 2016</a></blockquote>
 

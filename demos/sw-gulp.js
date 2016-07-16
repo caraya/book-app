@@ -37,26 +37,5 @@ module.exports = function(rootDir, handleFetch, importScripts, callback) {
     }
   });
 
-  var config = {
-    cacheId: 'iowebapp',
-    dynamicUrlToDependencies: dynamicUrlToDependencies,
-    handleFetch: handleFetch,
-    importScripts: importScripts,
-    logger: util.log,
-    staticFileGlobs: [
-      rootDir + '/bower_components/**/*.{html,js,css}',
-      rootDir + '/elements/**',
-      rootDir + '/fonts/**',
-      rootDir + '/images/**',
-      rootDir + '/scripts/**',
-      rootDir + '/styles/**/*.css',
-      rootDir + '/manifest.json',
-      rootDir + '/humans.txt',
-      rootDir + '/favicon.ico',
-      rootDir + '/data-worker-scripts.js'
-    ],
-    stripPrefix: rootDir + '/'
-  };
 
-  swPrecache(config, callback);
 };
