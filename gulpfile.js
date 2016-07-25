@@ -1,10 +1,8 @@
+/*jshint -W098 */
 (function() {
-
-  /*jshint -W098 */
   'use strict';
+
 // Require Gulp first
-
-
   var gulp = require('gulp'),
     pkg = require('./package.json'),
     args = require('yargs').argv,

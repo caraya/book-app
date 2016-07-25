@@ -2,28 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e8de90b-8ce7-400c-8e81-598432c5ad68" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/images/app-icon-144.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/images/app-icon-32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/images/app-icon.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/polymer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/service-worker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/src/my-app.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/src/my-icons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/src/my-view1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/src/my-view2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/src/my-view3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/sw-precache-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/test/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-blog/test/my-view1.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gulpfile-gulp4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/serviceworker-design.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/images/app-icon-144.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/images/app-icon-32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/images/app-icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/polymer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/service-worker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/src/my-app.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/src/my-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/src/my-view1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/src/my-view2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/src/my-view3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/sw-precache-config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/test/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-blog/test/my-view1.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/sw-gulp.js" afterPath="$PROJECT_DIR$/demos/sw-gulp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scapegoats.md" afterPath="$PROJECT_DIR$/scapegoats.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serviceworker-design.md" afterPath="$PROJECT_DIR$/serviceworker-design.md" />
     </list>
     <ignored path="markup-guide-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,16 +44,13 @@
     <favorites_list name="markup-guide-project" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="scapegoats.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scapegoats.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-184">
-                <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="162" />
-                <folding />
-              </first_editor>
-              <second_editor />
+    <leaf>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,10 +109,11 @@
         <option value="$PROJECT_DIR$/app/sw-gulp.js" />
         <option value="$PROJECT_DIR$/app/sw-basic.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/scapegoats.md" />
         <option value="$PROJECT_DIR$/demos/sw-gulp.js" />
         <option value="/JavaScript Fragment (serviceworker-design.md:1724).js" />
         <option value="$PROJECT_DIR$/serviceworker-design.md" />
+        <option value="$PROJECT_DIR$/scapegoats.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -126,10 +125,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="42" />
-    <option name="y" value="23" />
-    <option name="width" value="1396" />
-    <option name="height" value="837" />
+    <option name="x" value="212" />
+    <option name="y" value="132" />
+    <option name="width" value="1053" />
+    <option name="height" value="659" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -178,7 +177,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -208,12 +206,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/demos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wp-blog" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -228,6 +291,7 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/fonts" />
     <property name="jsx.switch.disabled" value="true" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
+    <property name="prop_add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -360,18 +424,21 @@
       <workItem from="1468284410532" duration="7602000" />
       <workItem from="1468388183353" duration="524000" />
       <workItem from="1468701568089" duration="641000" />
-      <workItem from="1468704154912" duration="1886000" />
+      <workItem from="1468704154912" duration="3039000" />
+      <workItem from="1468828060548" duration="182000" />
+      <workItem from="1469323350891" duration="226000" />
+      <workItem from="1469418241265" duration="123000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105366000" />
+    <option name="totallyTimeSpent" value="107050000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="23" width="1396" height="837" extended-state="0" />
+    <frame x="212" y="132" width="1053" height="659" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16363636" sideWeight="0.48828125" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3694207" sideWeight="0.48828125" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -427,8 +494,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sass/main.scss" />
-    <entry file="file://$PROJECT_DIR$/sass/partials/_footnotes.scss" />
     <entry file="file://$PROJECT_DIR$/sw-toolbox/service-worker.js" />
     <entry file="file://$PROJECT_DIR$/app/es6/app.es6.js" />
     <entry file="file://$PROJECT_DIR$/app/js/app.es6.js" />
@@ -511,13 +576,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node modules" />
-    <entry file="file://$PROJECT_DIR$/app/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/partials/_columns.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -591,13 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demos/sw-gulp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -626,72 +677,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serviceworker-design.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="601">
-            <caret line="125" column="64" selection-start-line="0" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-blog/src/my-view3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-blog/src/my-view1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-647">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-blog/src/my-icons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-blog/src/my-app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-blog/polymer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-blog/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/serviceworker-design.md" />
+    <entry file="file://$PROJECT_DIR$/wp-blog/src/my-view3.html" />
+    <entry file="file://$PROJECT_DIR$/wp-blog/src/my-view1.html" />
+    <entry file="file://$PROJECT_DIR$/wp-blog/src/my-icons.html" />
+    <entry file="file://$PROJECT_DIR$/wp-blog/src/my-app.html" />
+    <entry file="file://$PROJECT_DIR$/wp-blog/polymer.json" />
+    <entry file="file://$PROJECT_DIR$/wp-blog/index.html" />
     <entry file="file://$PROJECT_DIR$/scapegoats.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-184">
-            <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="162" />
-            <folding />
+          <first_editor relative-caret-position="601">
+            <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

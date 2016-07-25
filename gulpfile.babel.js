@@ -83,7 +83,7 @@ function errorLogger(error) {
   log(error);
   log('*** Error End ***');
   this.emit('end');
-}
+};
 
 /**
  * @name babel
@@ -92,7 +92,7 @@ function errorLogger(error) {
  *
  * @see {@link http://babeljs.io/|Babeljs}
  */
-gulp.task('babel', () => {
+gulp.task('babel', (done) => {
   log('Transpiling Babel Code to ES5');
   return gulp
     .src('app/es6/**/*.js')
@@ -107,7 +107,7 @@ gulp.task('babel', () => {
       pretty: true,
       title: 'Babel'
     }));
-});
+})
 
 /**
  * @name babelNext
