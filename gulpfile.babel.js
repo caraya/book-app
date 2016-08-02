@@ -6,43 +6,46 @@
 // Require Gulp first
 
 
-var gulp = require('gulp'),
-  pkg = require('./package.json'),
-  args = require('yargs').argv,
-  gulpif = require('gulp-if'),
-  del = require('del'),
-  // Load plugins
-  $ = require('gulp-load-plugins')({lazy: true}),
-  // Imagemin plugins that don't use gulp-
-  mozjpeg = require('imagemin-mozjpeg'),
-  webp = require('imagemin-webp'),
-  // SASS related
-  // Shouldn't require SASS but it looks like I do
-  sass = require('gulp-sass'),
-  sassdoc = require('sassdoc'),
-  scsslint = require('gulp-scss-lint'),
-  // Static Web Server stuff
-  browserSync = require('browser-sync'),
-  reload = browserSync.reload,
-  historyApiFallback = require('connect-history-api-fallback'),
-  mochaPhantomJS = require('gulp-mocha-phantomjs');
+import gulp from 'gulp';
 
-//var key = '';
-var site = 'https://caraya.github.io/athena-template/';
+import del from 'del';
+import path from 'path';
+import gulpif from 'gulp-if';
+// load-plugins
+import gulpLoadPlugins from "gulp-load-plugins";
+import pkg from "./package.json";
+// Imagemin plugins that don't use gulp-
+import mozjpeg from 'imagemin-mozjpeg';
+import webp from 'imagemin-webp';
+// SASS related
+import sass from 'gulp-sass';
+import sassdoc from 'sassdoc';
+import scsslint from 'gulp-scss-lint';
+// Static Web Server stuff
+import browserSync from 'browser-sync';
+import historyApiFallback from 'connect-history-api-fallback';
+// svg sprites
+import cheerio from 'gulp-cheerio';
+import svgmin from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
+
+const reload = browserSync.reload;
+const $ = gulpLoadPlugins({lazyLoad: true});
+const site = 'https://caraya.github.io/athena-template/';
+//const key = '';
 
 // List of browser versions we'll autoprefix for.
-// Taken from the Polymer Starter Kit gulpfile
-var AUTOPREFIXER_BROWSERS = [
-    'ie >= 10',
-    'ie_mob >= 10',
-    'ff >= 30',
-    'chrome >= 34',
-    'safari >= 7',
-    'opera >= 23',
-    'ios >= 7',
-    'android >= 4.4',
-    'bb >= 10'
-  ];
+const AUTOPREFIXER_BROWSERS = [
+  'ie >= 10',
+  'ie_mob >= 10',
+  'ff >= 30',
+  'chrome >= 34',
+  'safari >= 7',
+  'opera >= 23',
+  'ios >= 7',
+  'android >= 4.4',
+  'bb >= 10'
+];
 
 //// Local functions to use in tasks
 /**
