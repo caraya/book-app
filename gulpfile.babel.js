@@ -30,7 +30,7 @@ import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 
 const reload = browserSync.reload;
-const $ = gulpLoadPlugins({lazyLoad: true});
+const $$ = gulpLoadPlugins({lazyLoad: true});
 const site = 'https://caraya.github.io/athena-template/';
 //const key = '';
 
@@ -99,10 +99,9 @@ gulp.task('babel', (done) => {
   log('Transpiling Babel Code to ES5');
   return gulp
     .src('app/es6/**/*.js')
-    .pipe(gulpif(args.list, $.print()))
     .pipe($.sourcemaps.init())
     .pipe($.babel({
-      presets: ['es2015']
+      presets: ['stage-3', 'es2015']
     }))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('app/js/'))
@@ -127,7 +126,6 @@ gulp.task('babel', (done) => {
 gulp.task('babelNext', () => {
   log('Transpiling experimental ESNext to ES5');
   return gulp.src('app/es6/**/*.js')
-    .pipe(gulpif(args.list, $.print()))
     .pipe($.sourcemaps.init())
     .pipe($.babel({
       presets: ['stage-0']
@@ -151,7 +149,6 @@ gulp.task('babelNext', () => {
 gulp.task('coffee', () => {
   log('Transpiling coffeescript');
   return gulp.src('app/coffee/**/*.coffee')
-    .pipe(gulpif(args.list, $.print()))
     .pipe($.sourcemaps.init())
     .pipe($.coffee())
     .pipe($.sourcemaps.write())
@@ -174,8 +171,7 @@ gulp.task('coffee', () => {
 gulp.task('typescript', () => {
   log('Transpiling Typescript');
   return gulp.src('app/ts/**/*.ts')
-    .pipe(gulpif(args.list, $.print()))
-    .pipe($.ts({
+    .pipe($$.ts({
       noImplicitAny: true,
       out: 'scripts-ts.js',
       target: 'es5'
@@ -199,9 +195,8 @@ gulp.task('typescript', () => {
  */
 gulp.task('js-lint', () => {
   return gulp.src(['gulpfile.js', 'app/js/**/*.js'])
-    .pipe(gulpif(args.list, $.print()))
-    .pipe($.jshint())
-    .pipe($.jshint.reporter('jshint-stylish', {verbose: true}));
+    .pipe($$.jshint())
+    .pipe($$.jshint.reporter('jshint-stylish', {verbose: true}));
 });
 
 /**
@@ -213,10 +208,9 @@ gulp.task('js-lint', () => {
  */
 gulp.task('js-style', () => {
   return gulp.src(['app/js/**/*.js'])
-    .pipe(gulpif(args.list, $.print()))
-    .pipe($.jscs())
-    .pipe($.jscs.reporter())
-    .pipe($.size({
+    .pipe($$.jscs())
+    .pipe($$.jscs.reporter())
+    .pipe($$.size({
       pretty: true,
       title: 'jscs'
     }));
@@ -230,7 +224,7 @@ gulp.task('js-style', () => {
 gulp.task('jsdoc:gulpfile', function (done) {
   var config = require('./conf.json');
   gulp.src(['GULP-README.md', './gulpfile.js'], {read: false})
-    .pipe($.jsdoc3(config, done));
+    .pipe($$.jsdoc3(config, done));
 });
 /**
  *
@@ -242,9 +236,8 @@ gulp.task('jsdoc:gulpfile', function (done) {
  */
 gulp.task('sass:dev', (done) => {
   $.sass('app/scss/main.scss', { sourcemap: true, style: 'expanded'})
-    .pipe(gulpif(args.list, $.print()))
     .pipe(gulp.dest('app/css'))
-    .pipe($.size({
+    .pipe($$.size({
       pretty: true,
       title: 'SASS'
     }));
@@ -258,10 +251,9 @@ gulp.task('sass:dev', (done) => {
  * @description Creates SASS code optimized for production
 */
 gulp.task('sass:production', (done) => {
-  $.sass('app/scss/**/*.scss', { sourcemap: true, style: 'compressed'})
-    .pipe(gulpif(args.list, $.print()))
+  $$.sass('app/scss/**/*.scss', { sourcemap: true, style: 'compressed'})
     .pipe(gulp.dest('app/css'))
-    .pipe($.size({
+    .pipe($$.size({
       pretty: true,
       title: 'SASS'
     }));
@@ -280,7 +272,6 @@ gulp.task('sass:production', (done) => {
  */
 gulp.task('scsslint', () => {
   return gulp.src(['app/scss/**/*.scss'])
-    .pipe(gulpif(args.list, $.print()))
     .pipe(scsslint({
       'reporterOutputFormat': 'Checkstyle'
     }));
@@ -297,7 +288,6 @@ gulp.task('scsslint', () => {
  */
 gulp.task('sassdoc', () => {
   return gulp.src('app/sass/**/*.scss')
-    .pipe(gulpif(args.list, $.print()))
     .pipe(sassdoc({
       dest: 'app/sassdocs',
       verbose: true,
@@ -322,14 +312,13 @@ gulp.task('sassdoc', () => {
 */
 gulp.task('processCSS', gulp.series('sass:dev'), () => {
   return gulp.src('app/css/**/*.css')
-    .pipe(gulpif(args.list, $.print()))
 //    .pipe($.changed('app/css/**/*.css', {extension: '.css'}))
-    .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
-    .pipe($.sourcemaps.init())
-    .pipe($.cssnano({autoprefixer: false}))
-    .pipe($.sourcemaps.write('.'))
+    .pipe($$.autoprefixer(AUTOPREFIXER_BROWSERS))
+    .pipe($$.sourcemaps.init())
+    .pipe($$.cssnano({autoprefixer: false}))
+    .pipe($$.sourcemaps.write('.'))
     .pipe(gulp.dest('dist/css'))
-    .pipe($.size({
+    .pipe($$.size({
       pretty: true,
       title: 'processCSS'
     }));
@@ -342,12 +331,12 @@ gulp.task('processCSS', gulp.series('sass:dev'), () => {
  */
 gulp.task('uncss', () => {
   return gulp.src('app/css/**/*.css')
-    .pipe($.concat('main.css'))
-    .pipe($.uncss({
+    .pipe($$.concat('main.css'))
+    .pipe($$.uncss({
       html: ['index.html']
     }))
     .pipe(gulp.dest('dist/css/all-clean.css'))
-    .pipe($.size({
+    .pipe($$.size({
       pretty: true,
       title: 'Uncss'
     }));
@@ -360,7 +349,7 @@ gulp.task('uncss', () => {
  */
 gulp.task('useref', () => {
   return gulp.src('app/*.html')
-    .pipe($.useref({ searchPath: '.tmp' }))
+    .pipe($$.useref({ searchPath: '.tmp' }))
     .pipe(gulp.dest('dist/*.html'));
 });
 
@@ -373,7 +362,7 @@ gulp.task('useref', () => {
  */
 gulp.task('critical', () => {
   return gulp.src('app/*.html')
-    .pipe($.critical({
+    .pipe($$.critical({
       base: 'app/',
       inline: true,
       css: ['app/css/main.css'],
@@ -411,7 +400,7 @@ gulp.task('critical', () => {
  * For more info: {@link https://developers.google.com/speed/docs/insights/v2/getting-started|https://developers.google.com/speed/docs/insights/v2/getting-started}
  */
 gulp.task('psi-mobile', () => {
-  return $.psi(site, {
+  return $S.psi(site, {
     // key: key
     nokey: 'true',
     strategy: 'mobile'
@@ -434,7 +423,7 @@ gulp.task('psi-mobile', () => {
  * For more info: {@link https://developers.google.com/speed/docs/insights/v2/getting-started|https://developers.google.com/speed/docs/insights/v2/getting-started}
  */
 gulp.task('psi-desktop', () => {
-  return $.psi(site, {
+  return $$.psi(site, {
     nokey: 'true',
     // key: key,
     strategy: 'desktop'
@@ -454,7 +443,7 @@ gulp.task('psi-desktop', () => {
  */
 gulp.task('imagemin', () => {
   return gulp.src('app/images/*')
-    .pipe($.imagemin({
+    .pipe($$.imagemin({
       progressive: true,
       svgoPlugins: [
         {removeViewBox: false},
@@ -464,7 +453,7 @@ gulp.task('imagemin', () => {
     }))
     .pipe(webp({quality: 50})())
     .pipe(gulp.dest('app/images'))
-    .pipe($.size({
+    .pipe($$.size({
       pretty: true,
       title: 'imagemin'
     }));
@@ -576,63 +565,6 @@ gulp.task('processImages', () => {
 
 });
 
-
-/**
- * @name polymerBuild
- *
- * @description Polymer specific task that combines vulcanize and crisper in
- * one build step
- *
- * Vulcanize will combine all elements in elements.html and produce a single file.
- * This is the same as a concatenate task except that it understands polymer idiosyncracies
- *
- * We run crisper in the vulcanized output to extract scripts so we comply with CSP.
- *
- * @see {@link https://www.polymer-project.org/1.0/tools/overview.html|Polymer tools overview}
- * @see {@link https://github.com/polymer/vulcanize|Vulcanize}
- * @see {@link https://github.com/PolymerLabs/crisper|Crisper}
- */
-gulp.task('polymerBuild', () => {
-  return gulp.src('app/elements/elements.html')
-    .pipe($.vulcanize({
-      stripComments: false,
-      inlineCss: true,
-      inlineScripts: true
-    }))
-    .pipe($.crisper({
-      scriptInHead: false, // true is default
-      onlySplit: false
-    }))
-    .pipe(gulp.dest('dist/elements'))
-    .pipe($.size({title: 'vulcanize'}));
-});
-
-/**
- * @name test
- *
- * @description runs tests using MochaPhantomJS.
- *
- * *haven't decided which of the two testing systems I will use yet.*
- */
-gulp.task('test', () => {
-    return gulp
-    .src('app/test/runner.html')
-    .pipe(mochaPhantomJS({reporter: 'spec', dump:'test.log', require: 'assert'}));
-});
-
-/**
- * @name mocha
- *
- * @description runs tests using Mocha.
- *
- * *haven't decided which of the two testing systems I will use yet.*
- */
-gulp.task('mocha', () => {
-    return gulp.src('app/test/test.js', {read: false})
-        // gulp-mocha needs filepaths so has to be first after gulp.src
-      .pipe($.mocha({reporter: 'spec'}));
-});
-
 /**
  * @name copy
  *
@@ -740,8 +672,8 @@ gulp.task('clean', (done) => {
  */
 gulp.task('deploy', () => {
   return gulp.src('./dist/**/*')
-    .pipe($.ghPages())
-    .pipe($.size({
+    .pipe($$.ghPages())
+    .pipe($$.size({
       title: 'deploy'
     }));
 });
@@ -752,7 +684,7 @@ gulp.task('deploy', () => {
  * at the root of the app
  */
 gulp.task('bower', () => {
-  return $.bower();
+  return $$.bower();
 });
 
 
@@ -769,6 +701,29 @@ gulp.task('watch', () => {
   gulp.watch(['app/css/**/*.scss'], gulp.series('sass:dev', 'processCSS'), reload);
   gulp.watch(['app/images/**/*'], reload);
 });
+
+
+/**
+ * @name svgstore
+ *
+ * @description creates a sprite sheet from a set of icons
+ */
+gulp.task("svgstore", function () {
+  return gulp
+    .src("app/icons/*.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({
+      fileName: "sprite.svg",
+      prefix: "icon-" }))
+    .pipe(cheerio({
+      run: function ($) {
+        $("[fill]").removeAttr("fill");
+      },
+      parserOptions: { xmlMode: true }
+    }))
+    .pipe(gulp.dest("app/icons/"));
+});
+
 
 /**
  * @name server
