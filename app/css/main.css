@@ -1,0 +1,715 @@
+@font-face {
+  font-family: "Stone-Humanist";
+  src: url("../fonts/2E02D0_0_0.eot");
+  src: url("../fonts/2E02D0_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2E02D0_0_0.woff2") format("woff2"), url("../fonts/2E02D0_0_0.woff") format("woff"), url("../fonts/2E02D0_0_0.ttf") format("truetype"), url("../fonts/2E02D0_0_0.svg#Stone-Humanist") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Stone-Humanist-Ita";
+  src: url("../fonts/2E02D0_1_0.eot");
+  src: url("../fonts/2E02D0_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2E02D0_1_0.woff2") format("woff2"), url("../fonts/2E02D0_1_0.woff") format("woff"), url("../fonts/2E02D0_1_0.ttf") format("truetype"), url("../fonts/2E02D0_1_0.svg#Stone-Humanist-Ita") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Stone-Humanist-Semi";
+  src: url("../fonts/2E02D0_2_0.eot");
+  src: url("../fonts/2E02D0_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2E02D0_2_0.woff2") format("woff2"), url("../fonts/2E02D0_2_0.woff") format("woff"), url("../fonts/2E02D0_2_0.ttf") format("truetype"), url("../fonts/2E02D0_2_0.svg#Stone-Humanist-Semi") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Stone-Humanist-SemiItalic";
+  src: url("../fonts/2E02D0_3_0.eot");
+  src: url("../fonts/2E02D0_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2E02D0_3_0.woff2") format("woff2"), url("../fonts/2E02D0_3_0.woff") format("woff"), url("../fonts/2E02D0_3_0.ttf") format("truetype"), url("../fonts/2E02D0_3_0.svg#Stone-Humanist-SemiItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Skolar";
+  src: url("../fonts/skolarlatinweb-light-webfont.eot");
+  src: url("../fonts/skolarlatinweb-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/skolarlatinweb-light-webfont.woff2") format("woff2"), url("../fonts/skolarlatinweb-light-webfont.woff") format("woff"), url("../fonts/skolarlatinweb-light-webfont.ttf") format("truetype"), url("../fonts/skolarlatinweb-light-webfont.svg#Skolar") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Skolar-Ita";
+  src: url("../fonts/skolarlatinweb-lightitalic-webfont.eot");
+  src: url("../fonts/skolarlatinweb-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/skolarlatinweb-lightitalic-webfont.woff2") format("woff2"), url("../fonts/skolarlatinweb-lightitalic-webfont.woff") format("woff"), url("../fonts/skolarlatinweb-lightitalic-webfont.ttf") format("truetype"), url("../fonts/skolarlatinweb-lightitalic-webfont.svg#Skolar-Ita") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Skolar-Semi";
+  src: url("../fonts/skolarlatinweb-semibold-webfont.eot");
+  src: url("../fonts/skolarlatinweb-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/skolarlatinweb-semibold-webfont.woff2") format("woff2"), url("../fonts/skolarlatinweb-semibold-webfont.woff") format("woff"), url("../fonts/skolarlatinweb-semibold-webfont.ttf") format("truetype"), url("../fonts/skolarlatinweb-semibold-webfont.svg#Skolar-Semi") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Skolar-SemiItalic";
+  src: url("../fonts/skolarlatinweb-semibolditalic-webfont.eot");
+  src: url("../fonts/skolarlatinweb-semibolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/skolarlatinweb-semibolditalic-webfont.woff2") format("woff2"), url("../fonts/skolarlatinweb-semibolditalic-webfont.woff") format("woff"), url("../fonts/skolarlatinweb-semibolditalic-webfont.ttf") format("truetype"), url("../fonts/skolarlatinweb-semibolditalic-webfont.svg#Skolar-SemiItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/robotoslab-regular-webfont.eot");
+  src: url("../fonts/robotoslab-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-regular-webfont.woff2") format("woff2"), url("../fonts/robotoslab-regular-webfont.woff") format("woff"), url("../fonts/robotoslab-regular-webfont.ttf") format("truetype"), url("../fonts/robotoslab-regular-webfont.svg#Roboto Slab") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sourcecodepro-medium-webfont";
+  src: url("../fonts/sourcecodepro-medium-webfont.eot");
+  src: url("../fonts/sourcecodepro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcecodepro-medium-webfont.woff2") format("woff2"), url("../fonts/sourcecodepro-medium-webfont.woff") format("woff"), url("../fonts/sourcecodepro-medium-webfont.ttf") format("truetype"), url("../fonts/sourcecodepro-medium-webfont.svg#sourcecodepro-medium-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.wrap {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+.wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.left-column {
+  width: 17.5%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+  height: 100vh;
+  margin-top: 15em;
+}
+
+.main-content {
+  width: 61.25%;
+  float: left;
+  margin-left: 19.375%;
+  margin-right: -100%;
+}
+.main-content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.right-column {
+  width: 17.5%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+.right-column:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.main-content-simple {
+  width: 61.25%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+  height: 100%;
+}
+.main-content-simple:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.full-bleed {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-right: -30%;
+  margin-left: -30%;
+  padding-right: 30%;
+  padding-left: 30%;
+}
+.full-bleed:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.full-bleed img .full-bleed-image {
+  clear: both;
+  margin: 0;
+  position: absolute;
+  width: -moz-min-content;
+  width: -webkit-min-content;
+  width: min-content;
+}
+.full-bleed p {
+  margin-top: -.5em;
+}
+
+@media (min-width: 0) {
+  body::before {
+    content: '{ "current" : "small", "all" : [small], "position" : 0 }';
+    display: none;
+  }
+}
+/*! Grid based on https://github.com/necolas/griddle by Nicolas Gallagher (@necolas) */
+body {
+  font-size: 1em;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.no-js .responsive-image {
+  display: none;
+}
+
+.grid {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625em;
+  text-align: left;
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+}
+
+.opera:-o-prefocus,
+.grid {
+  word-spacing: -0.43em;
+}
+
+.grid > .grid {
+  overflow: hidden;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.grid__cell {
+  width: 100%;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0.625em;
+  /* controls vertical positioning of units */
+  vertical-align: top;
+  /* keeps unit content correctly aligned */
+  text-align: left;
+  /* reset text defaults */
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-rendering: auto;
+}
+
+.grid--center {
+  text-align: center;
+}
+
+.grid__cell--center {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+a [href]:hover {
+  background: #ffa;
+}
+
+a[href^="http"] {
+  text-decoration: underline;
+}
+
+blockquote {
+  border-left: 5px solid #f44336;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+  margin-top: 1.5em;
+  padding-left: 1em;
+}
+
+aside.pull {
+  margin-left: -20%;
+  margin-top: .2em;
+  margin-bottom: .5em;
+}
+
+.opening {
+  color: #f44336;
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.margin-notes,
+.content-left {
+  width: 230px;
+  margin-left: -230px;
+  margin-right: 20px;
+  text-align: right;
+  font-size: .75em;
+}
+
+.margin-notes-right,
+.content-right {
+  width: 230px;
+  margin-left: 760px;
+  margin-right: -20px;
+  text-align: left;
+  font-size: .75em;
+  position: absolute;
+}
+
+.content-right {
+  width: 230px;
+  margin-left: 760px;
+  margin-right: -20px;
+  text-align: left;
+  font-size: .75em;
+  position: absolute;
+}
+
+.content-right ul,
+.content-left ul {
+  list-style: none;
+}
+
+/*
+  asides stuff
+*/
+aside.lowlight {
+  opacity: .3;
+}
+
+aside.lowlight:hover {
+  opacity: 1;
+}
+
+aside h3 {
+  text-align: center;
+  padding-left: 20px;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-variant-ligatures: common-ligatures;
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "kern=1";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  font-kerning: normal;
+  color: #554c4d;
+  font-family: 'Stone-Humanist';
+  line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: 555;
+  font-family: 'Roboto Slab', sans-serif;
+  hyphens: none;
+}
+
+h1 {
+  font-size: 2em;
+  letter-spacing: -1px;
+  line-height: 1.25;
+  margin-top: 0.9375em;
+  margin-bottom: 0.3125em;
+}
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.13636364;
+  margin-top: 1.36363637em;
+  margin-bottom: 0.45454546em;
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.11111111;
+  margin-top: 1.66666667em;
+  margin-bottom: 0.55555556em;
+}
+
+strong {
+  font-family: 'Stone-Humanist-Semi';
+}
+
+em {
+  font-family: 'Stone-Humanist-Ita';
+}
+
+strong em,
+em strong {
+  font-family: 'Stone-Humanist-SemiItalic';
+}
+
+video,
+object {
+  border-width: thin;
+  border-style: solid;
+  clear: both;
+  display: block;
+  margin: 1em auto;
+  max-width: 100%;
+}
+
+div.video {
+  margin: 1em auto;
+  max-width: 100%;
+  max-width: min-content;
+}
+div.video iframe {
+  clear: both;
+  max-width: inherit;
+}
+div.video p {
+  font-style: italic;
+  font-weight: bold;
+  margin-top: -.125em;
+}
+
+h1 + p:first-letter {
+  float: left;
+  font-size: 7em;
+  line-height: 0.8em;
+  margin-bottom: -0.1em;
+  margin-top: 0.2em;
+  padding-right: 0.1em;
+}
+
+p p {
+  text-indent: 2em;
+}
+
+.small {
+  font-size: 90%;
+}
+
+section {
+  counter-increment: section_count;
+  counter-reset: figure_count;
+}
+
+figure {
+  counter-increment: figure_count;
+  margin: 2em auto;
+  max-width: 100%;
+  max-width: min-content;
+}
+figure figcaption {
+  color: #999;
+  font-family: 'Stone-Humanist-SemiItalic', sans-serif;
+  margin-top: -.25em;
+}
+figure figcaption::before {
+  content: "Figure " counter(section_count) "-" counter(figure_count) ": ";
+}
+figure img {
+  max-width: inherit;
+}
+
+figure .sidebyside {
+  counter-increment: figure_count;
+  margin: 2em auto;
+  max-width: 100%;
+  max-width: min-content;
+}
+figure .sidebyside figcaption {
+  font-family: 'Stone-Humanist-SemiItalic', sans-serif;
+  margin-top: -.25em;
+}
+figure .sidebyside figcaption::before {
+  content: "Figure " counter(section_count) "-" counter(figure_count) ": ";
+}
+figure .sidebyside img {
+  max-width: inherit;
+  width: 100%;
+}
+figure .sidebyside img :last-child {
+  clear: both;
+}
+
+.full-bleed {
+  background-image: url("../images/typography.jpg");
+  background-size: cover;
+  height: 50vw;
+}
+
+.full-bleed p {
+  margin-top: 1.5em;
+}
+.full-bleed p :before {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.full-bleed-image {
+  display: none;
+}
+
+div .code-example {
+  font-family: sourcecodepro-medium-webfont, monospace;
+  background-color: #666;
+  color: white;
+  padding: 20px;
+  white-space: pre;
+  display: block;
+}
+
+pre {
+  white-space: pre;
+}
+pre code {
+  font-family: 'sourcecodepro-medium-webfont', monospace;
+  font-size: 80%;
+}
+
+style {
+  font-family: sourcecodepro-medium-webfont, monospace;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  white-space: pre;
+  clear: both;
+  margin-bottom: .5em;
+}
+
+div .css-example {
+  width: 100%;
+  counter-increment: css_count;
+}
+div .css-example + p:before {
+  content: "CSS Example " counter(section_count) "-" counter(css_count) ": ";
+}
+
+iframe .cp_embed_iframe {
+  counter-increment: css_count;
+}
+iframe .cp_embed_iframe + p:before {
+  content: "CSS Example " counter(section_count) "-" counter(css_count) ": ";
+}
+
+/* 400px */
+/* 700px */
+/* 900px */
+/* 1300px */
+@media (min-width: 220em) {
+  h1 {
+    font-size: 2.5em;
+    letter-spacing: normal;
+    line-height: 1.125;
+    margin-top: 0.73333334em;
+    margin-bottom: 0.24444445em;
+    max-width: 14.4em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 .wrapper {
+    width: 217.5em;
+  }
+}
+@media (min-width: 282.5em) {
+  h1 {
+    font-size: 3em;
+    letter-spacing: normal;
+    line-height: 1.05;
+    margin-top: 0.6875em;
+    margin-bottom: 0.22916667em;
+    max-width: 12.66667em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 .wrapper {
+    width: 280em;
+  }
+}
+
+@media (min-width: 220em) {
+  h2 {
+    font-size: 2em;
+    line-height: 1.25;
+    margin-top: 1.03125em;
+    margin-bottom: 0.34375em;
+    max-width: 18em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 .wrapper {
+    width: 217.5em;
+  }
+}
+@media (min-width: 282.5em) {
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.25;
+    margin-top: 1.03125em;
+    margin-bottom: 0.34375em;
+    max-width: 16.88889em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 .wrapper {
+    width: 280em;
+  }
+}
+.font-scale-inactive h2 {
+  font-size: 2.25em;
+}
+
+@media (min-width: 220em) {
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin-top: 1.37500001em;
+    margin-bottom: 0.45833334em;
+    max-width: 26.18182em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 .wrapper {
+    width: 217.5em;
+  }
+}
+@media (min-width: 282.5em) {
+  h3 {
+    font-size: 1.75em;
+    line-height: 1.25;
+    margin-top: 1.37500001em;
+    margin-bottom: 0.45833334em;
+    max-width: 21.71429em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 .wrapper {
+    width: 280em;
+  }
+}
+
+@media (min-width: 220em) {
+  .wrapper {
+    width: 217.5em;
+  }
+
+  line-height: 1.22222222;
+  margin-top: 1.83333333em;
+  margin-bottom: 0.61111111em;
+  max-width: 32em;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 282.5em) {
+  .wrapper {
+    width: 280em;
+  }
+
+  max-width: 33.77778em;
+}
+ul li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+ol li {
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+}
+
+.toc ul {
+  list-style-type: none;
+}
+.toc ul li {
+  list-style-type: none;
+  padding: 0;
+}
+.toc ul li a {
+  font-size: 0.75em;
+}
+
+.font-glossary dt {
+  font-family: 'Stone-Humanist-Semi';
+  text-align: center;
+  text-transform: uppercase;
+}
+.font-glossary dd {
+  margin-bottom: 1em;
+}
+.font-glossary dd:last-of-type {
+  margin-bottom: 2em;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.col2 {
+  width: 100%;
+  /* How many columns? */
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  /* Space between columns */
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  /* How do we fill the content of our columns, default is to balance */
+  -moz-column-fill: balance;
+  -webkit-column-fill: balance;
+  column-fill: balance;
+  /* Column span, defaul is not to span columns */
+  -moz-column-span: none;
+  -webkit-column-span: none;
+  column-span: none;
+}
+
+.col3 {
+  width: 100%;
+  /* How many columns? */
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  /* Space between columns */
+  -moz-column-gap: 10px;
+  -webkit-column-gap: 10px;
+  column-gap: 10px;
+  /* How do we fill the content of our columns, default is to balance */
+  -moz-column-fill: balance;
+  -webkit-column-fill: balance;
+  column-fill: balance;
+  /* Column span, defaul is not to span columns */
+  -moz-column-span: none;
+  -webkit-column-span: none;
+  column-span: none;
+}
+
+

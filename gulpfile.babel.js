@@ -1,13 +1,6 @@
-/*jslint node: true */
-/*jshint esversion: 6 */
-/*jshint -W040 */
-/*jshint -W098 */
-'use strict';
 // Require Gulp first
-
-
 import gulp from 'gulp';
-
+// utilities
 import del from 'del';
 import path from 'path';
 import gulpif from 'gulp-if';
@@ -721,7 +714,7 @@ gulp.task("svgstore", function () {
       },
       parserOptions: { xmlMode: true }
     }))
-    .pipe(gulp.dest("app/icons/"));
+    .pipe(gulp.dest("app/images"));
 });
 
 
