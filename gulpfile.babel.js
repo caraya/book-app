@@ -52,11 +52,11 @@ function log(msg) {
   if (typeof (msg) === 'object') {
     for (item in msg) {
       if (msg.hasOwnProperty(item)) {
-        $.util.log($.util.colors.inverse(msg[item]));
+        $$.util.log($$.util.colors.inverse(msg[item]));
       }
     }
   } else {
-    $.util.log($.util.colors.inverse(msg));
+    $$.util.log($$.util.colors.inverse(msg));
   }
 }
 
@@ -66,7 +66,7 @@ function log(msg) {
  * @param  done - indicates we've completed the task
  */
 function clean(path, done) {
-  log('Cleaning ' + $.util.colors.red(path));
+  log('Cleaning ' + $$.util.colors.red(path));
   del(path, done);
 }
 
@@ -142,11 +142,11 @@ gulp.task('babelNext', () => {
 gulp.task('coffee', () => {
   log('Transpiling coffeescript');
   return gulp.src('app/coffee/**/*.coffee')
-    .pipe($.sourcemaps.init())
-    .pipe($.coffee())
-    .pipe($.sourcemaps.write())
+    .pipe($$.sourcemaps.init())
+    .pipe($$.coffee())
+    .pipe($$.sourcemaps.write())
     .pipe(gulp.dest('app/js/'))
-      .pipe($.size({
+      .pipe($$.size({
       pretty: true,
       title: 'Coffee'
     }));
@@ -464,7 +464,7 @@ gulp.task('imagemin', () => {
  */
 gulp.task('processImages', () => {
   return gulp.src(['app/images/**/*.{jpg,png}', '!app/images/touch/*.png'])
-    .pipe($.responsive({
+    .pipe($$.responsive({
       '*.jpg': [{
         // image-small.jpg is 200 pixels wide
         width: 200,
