@@ -1,0 +1,97 @@
+////
+/// @group Fonts
+/// @author [Carlos Araya](http://publishing-project.rivendellweb.net/)
+////
+
+/// Handles font ligatures for different browsers. Since different browsers have adopted different ways to handle the attribute we have to make it a mixin.
+/// @access public
+@mixin font-ligature {
+  // optional: for older browsers
+  text-rendering: optimizeLegibility;
+  // for iOS and Safari 6
+  -webkit-font-variant-ligatures: common-ligatures;
+  // for up-to-date browsers, including IE10 and Opera 21
+  font-variant-ligatures: common-ligatures;
+}
+
+/// We also need to handle font kerning different for different browsers.
+/// @access public
+@mixin font-kerning {
+  // optional: for older browsers
+  text-rendering: optimizeLegibility;
+  // pre-Firefox 14+
+  -moz-font-feature-settings: "kern=1";
+  -webkit-font-feature-settings: "kern";
+  // Firefox 14+
+  -moz-font-feature-settings: "kern";
+  // standard */
+  font-feature-settings: "kern";
+  // Safari 7+, Firefox 24+, Chrome 33(?)+, Opera 21+*/
+  font-kerning: normal;
+}
+
+/// Generates the necessary font-face declarations to handle most, if not all modern browsers. The only browsers not supported by the mixin are those that require eot lite
+/// @example scss - Using font-declaration mixin to load fonts
+///  @include font-declaration('Roboto Slab', '../fonts/robotoslab-regular-webfont');
+///  @include font-declaration('sourcecodepro-medium-webfont', '../fonts/sourcecodepro-medium-webfont');
+/// @example css - Result from example above
+///  @font-face {
+///    font-family: "Roboto Slab";
+///      src: url("../fonts/robotoslab-regular-webfont.eot");
+///      src: url("../fonts/robotoslab-regular-webfont.eot?#iefix") format("embedded-opentype"),
+///      url("../fonts/robotoslab-regular-webfont.woff2") format("woff2"),
+///      url("../fonts/robotoslab-regular-webfont.woff") format("woff"),
+///      url("../fonts/robotoslab-regular-webfont.ttf") format("truetype"),
+///      url("../fonts/robotoslab-regular-webfont.svg#Roboto Slab") format("svg");
+///    font-weight: normal;
+///    font-style: normal;
+///  }
+///
+///  @font-face {
+///    font-family: "sourcecodepro-medium-webfont";
+///      src: url("../fonts/sourcecodepro-medium-webfont.eot");
+///      src: url("../fonts/sourcecodepro-medium-webfont.eot?#iefix") format("embedded-opentype"),
+///      url("../fonts/sourcecodepro-medium-webfont.woff2") format("woff2"),
+///      url("../fonts/sourcecodepro-medium-webfont.woff") format("woff"),
+///      url("../fonts/sourcecodepro-medium-webfont.ttf") format("truetype"),
+///      url("../fonts/sourcecodepro-medium-webfont.svg#sourcecodepro-medium-webfont") format("svg");
+///    font-weight: normal;
+///    font-style: normal;
+///  }
+/// @access public
+/// @param {String} $font-family - Font-family name to use.
+/// @param {String} $font-file-name - File name for the font we are loading
+/// @param {String} $weight [normal] - Bold or normal
+/// @param {String} $style [normal] - Italic or normal
+@mixin font-declaration($font-family,  $font-file-name, $weight:normal, $style:normal) {
+@font-face {
+    font-family: '#{$font-family}';
+    src: url('#{$font-file-name}.eot');
+    src: url('#{$font-file-name}.eot?#iefix') format('embedded-opentype'),
+         url('#{$font-file-name}.woff2') format('woff2'),
+         url('#{$font-file-name}.woff') format('woff'),
+         url('#{$font-file-name}.ttf') format('truetype'),
+// working with myFonts requires the svg file to be formated like below
+// otherwise it will not work
+//       url('#{$font-file-name}.svg#wf') format('svg');
+         url('#{$font-file-name}.svg##{$font-family}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+
+}
+}
+
+/// Ebooks only use a local True Type Font. So we shrink the default font-declaration
+//and limit it to the format we need
+/// @access public
+/// @param {String} $font-family - Font-family name to use.
+/// @param {String} $font-file-name - File name for the font we are loading
+/// @param {String} $weight [normal] - Bold or normal
+/// @param {String} $padding [style] - Italic or normal
+@mixin ebook-font-declaration($font-family,  $font-file-name, $weight:normal, $style:normal) {
+  font-family: '#{$font-family}';
+  src:
+    local('#{$font-file-name}.ttf') format('truetype');
+  font-weight: $weight;
+  font-style: $style;
+}

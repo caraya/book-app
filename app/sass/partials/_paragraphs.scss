@@ -1,0 +1,29 @@
+// Paragraph styles
+//p:first-of-type {
+//  ::first-letter {
+//    display: inline-block;
+//    font-size: 350%;
+//    margin: 11px 0 -5px 0;
+//    padding: 0 .1em 0 0;
+//    height: .7em;
+//    line-height: .85em;
+//    float: left;
+//    color: #333;
+//  }
+//}
+
+div > h2 > p.cap::first-line { /* Use :first-letter if support for IE 8 or earlier is needed */
+  color: red;
+  font-size: 130%;
+}
+
+// Indent all paragraphs but the first
+p {
+  p {
+    text-indent: 2em;
+  }
+
+  .small {
+    font-size: 90%;
+  }
+}

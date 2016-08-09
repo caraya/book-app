@@ -1,0 +1,24 @@
+{
+  "name": "Reader_Application",
+  "description": "Content to go with Subcompact and Progressive Books",
+  "main": "",
+  "authors": [
+    "[object Object]"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/caraya/book-app",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12"
+  },
+  "devDependencies": {
+    "breakpoint": "^4.6.4"
+  }
+}

@@ -1,0 +1,14 @@
+// Maps tags to corresponding fonts
+strong {
+  font-family: 'Stone-Humanist-Semi';
+}
+
+em {
+  font-family: 'Stone-Humanist-Ita';
+}
+
+// When using both we don't care what order they are used in
+strong em,
+em strong {
+  font-family: 'Stone-Humanist-SemiItalic';
+}

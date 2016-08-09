@@ -1,0 +1,18 @@
+// Link Formatting
+
+// Internal links have no underline and a hover value
+a {
+  text-decoration: none;
+
+  [href]:hover {
+      background: #ffa;
+    }
+}
+
+  // if the link's href attribute starts with http
+  // (which means both http AND https) underline
+  // the links to distinguish it from internal links
+  // that will not get underlined
+a[href^="http"] {
+  text-decoration: underline;
+}
